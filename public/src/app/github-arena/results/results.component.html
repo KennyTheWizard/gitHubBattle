@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h1 class="text-success">1st Place</h1>
+    <p class="text-success">{{ firstPlace.username }} (Score: {{ firstPlace.score }})</p>
+    <h1 class="text-danger">2nd Place</h1>
+    <p class="text-danger">{{ secondPlace.username }} (Score: {{ secondPlace.score }})</p>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img src="{{ firstPlace.avatarUrl }}">
+        <p>{{ firstPlace.username }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <a [routerLink]="['/']" class="btn btn-dark btn-block">Reset</a>
+  </div>
+</div>

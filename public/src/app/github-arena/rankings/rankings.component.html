@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header">
+    <h1>Rankings</h1>
+  </div>
+  <div class="card-body">
+    <div *ngFor="let player of playerList; let i = index" class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-1">
+            <h1>{{ i + 1 }}</h1>
+          </div>
+          <div class="col-sm-6">
+            <img src="{{ player.avatarUrl }}" alt="No Image" class="border border-dark">
+            <p class="text-center">{{ player.username }}</p>
+          </div>
+          <div class="col-sm-5">
+            <h1>Score: {{ player.score }}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
